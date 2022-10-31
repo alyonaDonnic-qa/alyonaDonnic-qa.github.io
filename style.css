@@ -1,0 +1,225 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #b61414;
+    --text: #ffffff;
+    --subtext: #531616;
+    --linktext: #cb782f;
+    --underline: #444444;
+    --sectionbg: #1c1c1e;
+    --buttoncolor: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme:light) {
+  :root {
+    --bg: #083da0;
+    --text: #8fdbf5;-webkit-text-stroke: 0.02px rgb(1, 5, 7);
+    --subtext: #df5057;
+    --linktext: #6ebdf1;
+    --underline: #5db9ee;
+    --sectionbg: #0c455e;
+    --buttoncolor: #093747;
+  }
+}
+
+body {
+  font-family: "Bebas Neue";
+  background-image: linear-gradient(145deg, #6eb6e9, rgb(3, 39, 53), #063644, rgb(15, 146, 197));
+  background-size: 100% 100%;;
+  color: var(--text);
+  display: flex;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img:hover {
+  border: 3px solid #df5555; /* Ширина, вид и цвет рамки */
+  border-radius: 30px;
+}
+
+.header {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__avatar {
+  border-radius: 30px;
+  border: 3px solid transparent;
+    box-shadow: 0 4px 15px 0 rgba(235, 237, 240, 0.52);
+}
+
+.header__title {
+  margin: 30px 0 10px 0;
+  font-size: 32px;
+  line-height: 1.2;
+  font-family: "Bebas Neue";
+}
+
+.header__subtitle {
+  color: var(--subtext);
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links { 
+  width: 320px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.links__header {
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+
+.links__container {
+  list-style-type: none;
+  background: var(--sectionbg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: auto;
+  padding: 20px 20px 10px;
+  gap: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+a {
+  color: #6ebdf1; /* Цвет обычной ссылки */ 
+  text-decoration: none; /* Убираем подчеркивание */
+}
+a:visited {
+  color: #6ebdf1; /* Цвет посещённой ссылки */
+} 
+a:hover {
+  color: #f6525a; /* Цвет ссылки при наведении на нее курсора мыши */  
+  text-decoration: underline; /* Добавляем подчеркивание */
+}
+
+.links__link,
+.links__title {
+  font-size: 14px;
+  font-size: 1.2;
+  
+}
+
+.links__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 10px;
+  gap: 30px;
+  border-bottom: 1px solid var(--underline);
+  width: 280px;
+}
+
+.links__link:last-child {
+  border-bottom: none;
+  display: flex;
+  display: flex;
+ 
+}
+
+.linsk__link,
+.links__link:visited {
+  text-decoration: none;
+  color: var(--linktext);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links__title {
+  margin: 0;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-link {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 320px;
+  background: var(--linktext);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  
+
+  font-size: 14px;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--buttoncolor);
+  text-decoration: none;
+}
+.button-link {
+  color: #05171a;
+  border-color: #e07070;
+  overflow: hidden;
+  position: relative;
+}
+.button-link:before, .button-link:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 0;
+  top: 0;
+  background-color: #dd6060;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+.button-link {
+  left: -10px;
+  -webkit-transform: skew(-10deg, 0);
+          transform: skew(-10deg, 0);
+}
+.button-link {
+  right: -10px;
+  -webkit-transform: skew(-10deg, 0);
+          transform: skew(-10deg, 0);
+}
+.button-link:hover {
+  color: #27323A;
+}
+.button-link:hover:before, .button-link:hover:after {
+  width: 80%;
+}

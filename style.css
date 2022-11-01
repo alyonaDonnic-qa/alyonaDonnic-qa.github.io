@@ -50,7 +50,7 @@ img:hover {
 .header__avatar {
   border-radius: 30px;
   border: 3px solid transparent;
-    box-shadow: 0 4px 15px 0 rgba(235, 237, 240, 0.52);
+    box-shadow: 0 4px 15px 0 rgba(248, 249, 250, 0.52);
 }
 
 .header__title {
@@ -109,7 +109,7 @@ a {
   text-decoration: none; /* Убираем подчеркивание */
 }
 a:visited {
-  color: #6ebdf1; /* Цвет посещённой ссылки */
+  color: #f55c5c; /* Цвет посещённой ссылки */
 } 
 a:hover {
   color: #f6525a; /* Цвет ссылки при наведении на нее курсора мыши */  
